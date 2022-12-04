@@ -2,8 +2,8 @@
 
 //Your Mysql Config
 $servername = "localhost";
-$username = "gunesh";
-$password = "gunesh";
+$username = "root";
+$password = "";
 $dbname = "git_repos_jobportal";
 
 //Create New Database Connection
@@ -13,3 +13,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if($conn->connect_error) {
 	die("Connection Failed: ". $conn->connect_error);
 }
+
+// http://localhost/Job-Portal/ to execute project
+
